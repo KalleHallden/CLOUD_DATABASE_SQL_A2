@@ -14,9 +14,9 @@ public class SeederTestDriver {
         Faker faker = new Faker();
         Connection connection = ConnectionHelper.createPostgresConnection();
         Random random = new Random();
-        // Seeder seeder = new Seeder(faker, connection, random);
-        // System.out.println("Creating user table");
-        // seeder.createUserTable();
+        Seeder seeder = new Seeder(faker, connection, random);
+        System.out.println("Creating user table");
+        seeder.createUserTable();
         // System.out.println("Inserting fake users");
         // seeder.insertFakeUsers(12);
         // System.out.println("Creating web page table");
