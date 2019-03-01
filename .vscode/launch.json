@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SeederTestDriver",
+            "request": "launch",
+            "mainClass": "se.chalmers.dm.SeederTestDriver",
+            "projectName": "jdbc"
+        }
+    ]
+}

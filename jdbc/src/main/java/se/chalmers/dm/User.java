@@ -7,9 +7,9 @@ class User {
     private String fName;
     private String lName;
     private String email;
-    private Boolean isActive;
+    private int isActive;
 
-    public User(int id, int ssn, String fName, String lName, String email, Boolean isActive) {
+    public User(int id, int ssn, String fName, String lName, String email, int isActive) {
         this.id = id;
         this.ssn = ssn;
         this.fName = fName;
