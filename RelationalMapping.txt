@@ -1,0 +1,57 @@
+
+
+
+DATA_CENTER(Name, Ausername, Capacity)
+{ Ausername } → { ADMIN.Username }
+
+SERVER(ServerId, Dname, CommissionTime, HardwareModel)
+{ Dname } → { DATA_CENTER.Name }
+
+SERVER_PROCESS(ProcesID, ServerId)
+DATABASE(ProcesID, ServerId, Type, DiskSpace)
+VM(ProcesID, ServerId, Memory, Cpu)
+{ ServerId } → { SERVER.ServerId }
+
+TASK(TaskId, Cid, Finished, Started, TaskName)
+{ Cid } → { CUSTOMER.CustomerId }
+
+CUSTOMER(CustomerId)
+
+ADMIN(Username)
+
+DATA_CENTER_HAS_ADMIN(DataCenter, Admin)
+{ DataCenter } → { DATA_CENTER.Name }
+{ Admin } → { ADMIN.Username }
+
+ADMIN_HAS_ROLE(Ausername, Role) 
+{ Ausername } → { ADMIN.Username }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
