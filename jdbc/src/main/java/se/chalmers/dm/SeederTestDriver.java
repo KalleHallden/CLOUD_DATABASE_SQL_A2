@@ -1,4 +1,6 @@
 package se.chalmers.dm;
+import se.chalmers.dm.Seeder;
+import se.chalmers.dm.ConnectionHelper;
 
 import com.github.javafaker.Faker;
 
@@ -9,9 +11,9 @@ import java.util.Random;
 public class SeederTestDriver {
     // IMPORTANT: Do NOT change this code, just uncomment it!
     public static void main(String[] args) throws SQLException {
-        // Faker faker = new Faker();
-        // Connection connection = ConnectionHelper.createPostgresConnection();
-        // Random random = new Random();
+        Faker faker = new Faker();
+        Connection connection = ConnectionHelper.createPostgresConnection();
+        Random random = new Random();
         // Seeder seeder = new Seeder(faker, connection, random);
         // System.out.println("Creating user table");
         // seeder.createUserTable();
